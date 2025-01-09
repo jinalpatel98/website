@@ -15,7 +15,7 @@ services:
   db:
           container_name: mysqli
           image: mysql:latest
-##          command: --default-authentication-plugin=mysql_native_password
+          command: --default-authentication-plugin=mysql_native_password
           restart: always  
           volumes:
              - ./php/online-shopping-system/database/onlineshop.sql:/docker-entrypoint-initdb.d/onlineshop.sql
